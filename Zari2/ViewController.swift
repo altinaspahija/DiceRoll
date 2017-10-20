@@ -30,11 +30,11 @@ class ViewController: UIViewController {
     }
     func luaj()
     {
-        let numri1 = Int(arc4random_uniform(6))
+        let numri1 = Int(arc4random_uniform(5)) + 1
         let numri2 =
-            Int(arc4random_uniform(6))
-        LeftImage.image = UIImage(named: zaret[numri1-1])
-        RightImage.image = UIImage(named: zaret[numri2-1])
+            Int(arc4random_uniform(5)) + 1
+        LeftImage.image = UIImage(named: zaret[numri1])
+        RightImage.image = UIImage(named: zaret[numri2])
     }
     
 }
